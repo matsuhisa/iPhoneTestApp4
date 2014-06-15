@@ -58,7 +58,7 @@
          http://qiita.com/roothybrid7/items/532b63175da30fa9a2b1
          */
         //[[segue destinationViewController] setDelegate:self];
-        //[[segue destinationViewController] setMoviememo:_moviememo];
+        [[segue destinationViewController] setMoviememo:self.moviememo];
         
         /*
          http://midorina.net/green/2013/08/storyboard%E3%81%A7%E9%80%94%E4%B8%AD%E3%81%AEview%E3%81%8B%E3%82%89navigationcontroller%E3%82%92%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%84%E5%A0%B4%E5%90%88.html

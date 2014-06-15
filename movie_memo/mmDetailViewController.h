@@ -6,7 +6,8 @@
 
 @class MovieMemo;
 
-@interface mmDetailViewController : UITableViewController <EditViewDelegate>
+//@interface mmDetailViewController : UITableViewController <EditViewDelegate>
+@interface mmDetailViewController : UITableViewController
 
 // 
 @property (strong, nonatomic) MovieMemo *moviememo;

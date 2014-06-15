@@ -2,6 +2,7 @@
 //  movie_memo
 
 #import "EditViewController.h"
+#import "MovieMemo.h"
 
 @interface EditViewController ()
 @end
@@ -10,6 +11,10 @@
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
+    NSLog(@"------------");
+    NSLog(@"EditView -> initWithStyle");
+    NSLog(@"------------");
+
     self = [super initWithStyle:style];
     if (self) {
     }
@@ -27,12 +32,14 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)setMoviememo:(MovieMemo *)moviememo
+- (void)setMoviememo:(MovieMemo *)newmoviememo
 {
-    NSLog(@"------------");
     NSLog(@"値を受け取る");
-    self.moviememo = moviememo;
-    NSLog(@"------------");
+
+    if(_moviememo != newmoviememo)
+    {
+        _moviememo = newmoviememo;
+    }
 }
 
 - (void)configureView
@@ -43,6 +50,7 @@
     
     MovieMemo *theMovieMemo = self.moviememo;
     
-    self.titleEdit.text = @"編集";
+    self.titleEdit.text = theMovieMemo.title;
+    self.howtoEdit.text = theMovieMemo.howto;
 }
 @end
