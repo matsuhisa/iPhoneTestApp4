@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9A375E9194CA709004D05C4 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A375E8194CA709004D05C4 /* AddViewController.m */; };
+		B9A375EC194CA99B004D05C4 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A375EB194CA99A004D05C4 /* EditViewController.m */; };
+		B9A375EF194DA8A9004D05C4 /* MyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A375EE194DA8A9004D05C4 /* MyNavigationController.m */; };
 		B9CB1EF8194BDFC7005AE56E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CB1EF7194BDFC7005AE56E /* Foundation.framework */; };
 		B9CB1EFA194BDFC7005AE56E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CB1EF9194BDFC7005AE56E /* CoreGraphics.framework */; };
 		B9CB1EFC194BDFC7005AE56E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CB1EFB194BDFC7005AE56E /* UIKit.framework */; };
@@ -22,6 +25,8 @@
 		B9CB1F1C194BDFC7005AE56E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CB1EFB194BDFC7005AE56E /* UIKit.framework */; };
 		B9CB1F24194BDFC7005AE56E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9CB1F22194BDFC7005AE56E /* InfoPlist.strings */; };
 		B9CB1F26194BDFC7005AE56E /* movie_memoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB1F25194BDFC7005AE56E /* movie_memoTests.m */; };
+		B9CB1F31194BE1C5005AE56E /* MovieMemo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB1F30194BE1C5005AE56E /* MovieMemo.m */; };
+		B9CB1F34194C5423005AE56E /* mmDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB1F33194C5423005AE56E /* mmDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9A375E7194CA709004D05C4 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		B9A375E8194CA709004D05C4 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		B9A375EA194CA99A004D05C4 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		B9A375EB194CA99A004D05C4 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		B9A375ED194DA8A9004D05C4 /* MyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationController.h; sourceTree = "<group>"; };
+		B9A375EE194DA8A9004D05C4 /* MyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationController.m; sourceTree = "<group>"; };
 		B9CB1EF4194BDFC7005AE56E /* movie_memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movie_memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CB1EF7194BDFC7005AE56E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B9CB1EF9194BDFC7005AE56E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +67,10 @@
 		B9CB1F21194BDFC7005AE56E /* movie_memoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "movie_memoTests-Info.plist"; sourceTree = "<group>"; };
 		B9CB1F23194BDFC7005AE56E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9CB1F25194BDFC7005AE56E /* movie_memoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = movie_memoTests.m; sourceTree = "<group>"; };
+		B9CB1F2F194BE1C5005AE56E /* MovieMemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieMemo.h; sourceTree = "<group>"; };
+		B9CB1F30194BE1C5005AE56E /* MovieMemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieMemo.m; sourceTree = "<group>"; };
+		B9CB1F32194C5423005AE56E /* mmDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmDataController.h; sourceTree = "<group>"; };
+		B9CB1F33194C5423005AE56E /* mmDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +133,18 @@
 				B9CB1F06194BDFC7005AE56E /* mmAppDelegate.h */,
 				B9CB1F07194BDFC7005AE56E /* mmAppDelegate.m */,
 				B9CB1F09194BDFC7005AE56E /* Main.storyboard */,
+				B9A375ED194DA8A9004D05C4 /* MyNavigationController.h */,
+				B9A375EE194DA8A9004D05C4 /* MyNavigationController.m */,
+				B9A375EA194CA99A004D05C4 /* EditViewController.h */,
+				B9A375EB194CA99A004D05C4 /* EditViewController.m */,
+				B9A375E7194CA709004D05C4 /* AddViewController.h */,
+				B9A375E8194CA709004D05C4 /* AddViewController.m */,
+				B9CB1F2F194BE1C5005AE56E /* MovieMemo.h */,
+				B9CB1F30194BE1C5005AE56E /* MovieMemo.m */,
 				B9CB1F0C194BDFC7005AE56E /* mmMasterViewController.h */,
 				B9CB1F0D194BDFC7005AE56E /* mmMasterViewController.m */,
+				B9CB1F32194C5423005AE56E /* mmDataController.h */,
+				B9CB1F33194C5423005AE56E /* mmDataController.m */,
 				B9CB1F0F194BDFC7005AE56E /* mmDetailViewController.h */,
 				B9CB1F10194BDFC7005AE56E /* mmDetailViewController.m */,
 				B9CB1F12194BDFC7005AE56E /* Images.xcassets */,
@@ -256,7 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CB1F08194BDFC7005AE56E /* mmAppDelegate.m in Sources */,
+				B9CB1F31194BE1C5005AE56E /* MovieMemo.m in Sources */,
 				B9CB1F04194BDFC7005AE56E /* main.m in Sources */,
+				B9A375EF194DA8A9004D05C4 /* MyNavigationController.m in Sources */,
+				B9A375E9194CA709004D05C4 /* AddViewController.m in Sources */,
+				B9A375EC194CA99B004D05C4 /* EditViewController.m in Sources */,
+				B9CB1F34194C5423005AE56E /* mmDataController.m in Sources */,
 				B9CB1F0E194BDFC7005AE56E /* mmMasterViewController.m in Sources */,
 				B9CB1F11194BDFC7005AE56E /* mmDetailViewController.m in Sources */,
 			);
@@ -463,6 +493,7 @@
 				B9CB1F2B194BDFC7005AE56E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9CB1F2C194BDFC7005AE56E /* Build configuration list for PBXNativeTarget "movie_memoTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +502,7 @@
 				B9CB1F2E194BDFC7005AE56E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

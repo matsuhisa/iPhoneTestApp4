@@ -1,16 +1,33 @@
-//
 //  mmDetailViewController.h
 //  movie_memo
-//
-//  Created by 松久浩伸 on 2014/06/14.
-//  Copyright (c) 2014年 ___FULLUSERNAME___. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
+#import "EditViewController.h"
 
-@interface mmDetailViewController : UIViewController
+@class MovieMemo;
 
-@property (strong, nonatomic) id detailItem;
+@interface mmDetailViewController : UITableViewController <EditViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+// 
+@property (strong, nonatomic) MovieMemo *moviememo;
+
+// タイトル
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+// 鑑賞方法
+@property (weak, nonatomic) IBOutlet UILabel *howtoLabel;
+
+// 鑑賞日
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
+// 点数
+@property (weak, nonatomic) IBOutlet UILabel *gradeLabel;
+
+// 感想
+@property (weak, nonatomic) IBOutlet UILabel *reportLabel;
+
+// 巻き戻し
+- (IBAction)editDone:(UIStoryboardSegue *)segue;
+- (IBAction)editCancel:(UIStoryboardSegue *)segue;
+
 @end
