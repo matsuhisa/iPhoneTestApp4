@@ -4,7 +4,6 @@
 #import "mmDataController.h"
 #import "MovieMemo.h"
 
-
 // クラスの拡張
 @interface mmDataController ()
 - (void)initializeDefaultDataList;
@@ -32,7 +31,6 @@
 
     MovieMemo *movie;
     movie = [[MovieMemo alloc]initWithName:@"題名" howto:@"鑑賞方法" date:today grade:grade report:@"感想です"];
-
     [self addMovieMemo:movie];
 }
 
@@ -41,6 +39,11 @@
     if (_masterList != newList) {
         _masterList = [newList mutableCopy];
     }
+}
+
+// 更新処理
+- (void)updateMovieMemo:(MovieMemo *)movieMemo targetIndex:(NSUInteger)targetIndex{
+    [self.masterList replaceObjectAtIndex:targetIndex withObject:movieMemo];
 }
 
 // 追加処理

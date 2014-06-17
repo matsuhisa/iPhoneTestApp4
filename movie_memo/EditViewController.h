@@ -25,4 +25,5 @@
     @property (weak, nonatomic) IBOutlet UITextField *howtoEdit;
     @property (weak, nonatomic) IBOutlet UITextField *rangeEdit;
 
+    - (IBAction)editDone:(UIStoryboardSegue *)segue;
 @end

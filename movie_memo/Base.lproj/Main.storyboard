@@ -426,8 +426,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <!--Edit View Controller - 編集-->
         <scene sceneID="n9X-iG-d25">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cp0-Ba-ywR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="cXe-9s-Xrp" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController id="QAu-6u-pfJ" customClass="EditViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AVY-rE-Myq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -529,6 +527,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="titleEdit" destination="xVI-Y1-ZZB" id="i4W-xf-svh"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cp0-Ba-ywR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cXe-9s-Xrp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1414" y="375"/>
         </scene>

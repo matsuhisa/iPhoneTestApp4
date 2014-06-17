@@ -9,12 +9,15 @@
 
 @implementation EditViewController
 
+- (IBAction)editDone:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"ReturnEdit"]) {
+        [self.delegate editViewControllerFinsh:self];
+    }
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    NSLog(@"------------");
-    NSLog(@"EditView -> initWithStyle");
-    NSLog(@"------------");
-
     self = [super initWithStyle:style];
     if (self) {
     }
@@ -34,8 +37,6 @@
 
 - (void)setMoviememo:(MovieMemo *)newmoviememo
 {
-    NSLog(@"値を受け取る");
-
     if(_moviememo != newmoviememo)
     {
         _moviememo = newmoviememo;
@@ -44,10 +45,6 @@
 
 - (void)configureView
 {
-    NSLog(@"------------");
-    NSLog(@"editcontroller -> configureView");
-    NSLog(@"------------");
-    
     MovieMemo *theMovieMemo = self.moviememo;
     
     self.titleEdit.text = theMovieMemo.title;

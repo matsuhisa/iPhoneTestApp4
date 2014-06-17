@@ -7,7 +7,6 @@
 #import "mmDataController.h"
 #import "MovieMemo.h"
 
-
 @implementation mmMasterViewController
 
 // キャンセル
@@ -58,7 +57,7 @@
     return 1;
 }
 
-//
+// データーの数を渡す
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.dataController countOfList];
@@ -88,9 +87,16 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
+        // moviememoを渡す
         mmDetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.moviememo = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
 
+        // 何番目のデーターか
+        NSNumber *rowIndex = [NSNumber numberWithInt:self.tableView.indexPathForSelectedRow.row];
+        detailViewController.moviewMemoIndex = rowIndex;
+
+        // datacontroller
+        detailViewController.dataController = self.dataController;
     }
 }
 
@@ -98,4 +104,20 @@
 {
     return NO;
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // http://skyarts.com/blog/jp/skyarts/?p=29327
+    // http://d.hatena.ne.jp/cooking_3min/20121129/1354176847
+    // http://iphone-tora.sakura.ne.jp/uitableview.html
+    // http://ebisu.surbiton.jp/sysblog/2012/04/uitableview.html
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
 @end
