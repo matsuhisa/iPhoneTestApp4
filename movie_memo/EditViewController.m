@@ -2,11 +2,19 @@
 //  movie_memo
 
 #import "EditViewController.h"
+#import "MovieMemo.h"
 
 @interface EditViewController ()
 @end
 
 @implementation EditViewController
+
+- (IBAction)editDone:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"ReturnEdit"]) {
+        [self.delegate editViewControllerFinsh:self];
+    }
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,22 +35,19 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)setMoviememo:(MovieMemo *)moviememo
+- (void)setMoviememo:(MovieMemo *)newmoviememo
 {
-    NSLog(@"------------");
-    NSLog(@"値を受け取る");
-    self.moviememo = moviememo;
-    NSLog(@"------------");
+    if(_moviememo != newmoviememo)
+    {
+        _moviememo = newmoviememo;
+    }
 }
 
 - (void)configureView
 {
-    NSLog(@"------------");
-    NSLog(@"editcontroller -> configureView");
-    NSLog(@"------------");
-    
     MovieMemo *theMovieMemo = self.moviememo;
     
-    self.titleEdit.text = @"編集";
+    self.titleEdit.text = theMovieMemo.title;
+    self.howtoEdit.text = theMovieMemo.howto;
 }
 @end

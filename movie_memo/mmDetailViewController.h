@@ -5,11 +5,17 @@
 #import "EditViewController.h"
 
 @class MovieMemo;
+@class mmDataController;
 
 @interface mmDetailViewController : UITableViewController <EditViewDelegate>
+//@interface mmDetailViewController : UITableViewController
 
 // 
 @property (strong, nonatomic) MovieMemo *moviememo;
+@property (strong, nonatomic) NSNumber *moviewMemoIndex;
+
+// 
+@property (strong, nonatomic) mmDataController *dataController;
 
 // タイトル
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
