@@ -27,6 +27,7 @@
 		B9CB1F26194BDFC7005AE56E /* movie_memoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB1F25194BDFC7005AE56E /* movie_memoTests.m */; };
 		B9CB1F31194BE1C5005AE56E /* MovieMemo.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB1F30194BE1C5005AE56E /* MovieMemo.m */; };
 		B9CB1F34194C5423005AE56E /* mmDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CB1F33194C5423005AE56E /* mmDataController.m */; };
+		B9F4088819550B670033C7AE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F4088719550B670033C7AE /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B9CB1F30194BE1C5005AE56E /* MovieMemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieMemo.m; sourceTree = "<group>"; };
 		B9CB1F32194C5423005AE56E /* mmDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmDataController.h; sourceTree = "<group>"; };
 		B9CB1F33194C5423005AE56E /* mmDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmDataController.m; sourceTree = "<group>"; };
+		B9F4088719550B670033C7AE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F4088819550B670033C7AE /* CoreData.framework in Frameworks */,
 				B9CB1EFA194BDFC7005AE56E /* CoreGraphics.framework in Frameworks */,
 				B9CB1EFC194BDFC7005AE56E /* UIKit.framework in Frameworks */,
 				B9CB1EF8194BDFC7005AE56E /* Foundation.framework in Frameworks */,
@@ -119,6 +122,7 @@
 		B9CB1EF6194BDFC7005AE56E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9F4088719550B670033C7AE /* CoreData.framework */,
 				B9CB1EF7194BDFC7005AE56E /* Foundation.framework */,
 				B9CB1EF9194BDFC7005AE56E /* CoreGraphics.framework */,
 				B9CB1EFB194BDFC7005AE56E /* UIKit.framework */,
